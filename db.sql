@@ -66,5 +66,16 @@ ALTER TABLE tb_veiculo
     ADD FOREIGN KEY (cliente_id) REFERENCES tb_cliente(id);
 
 
+CREATE TABLE tb_produto (
+    id INT(11) PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(20) NOT NULL,
+    valor VARCHAR(10) NOT NULL
+    categoria VARCHAR(20) NOT NULL
+);
 
+-- Para inserir dados na tabela --
+INSERT INTO tb_produto (ano, modelo, marca)
+VALUES ('teclado', '90,00', 'informática');
 
+INSERT INTO tb_produto (ano, modelo, marca)
+VALUES ('mouse', '30,00', 'informática');
